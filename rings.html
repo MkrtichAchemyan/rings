@@ -23,18 +23,15 @@
         div.style.top = e.clientY+"px";
         div.style.borderColor = 'rgb('+a+','+b+','+c+')';
         //div.style.borderColor = 
-        
+        setTimeout(function(){document.body.removeChild(document.body.childNodes[0])},500)
     
     });
     
-            var int = setInterval(function(){
-        document.body.removeChild(document.body.childNodes[0])
+           /* var int = setInterval(function(){
+        document.body.removeChild(document.body.childNodes[0])*/
         
-    },40)
-            if (document.childElementCount!==1){
-        clearInterval(int)
-        }
-   console.log(document.childElementCount);
+    
+        
 
     
     
